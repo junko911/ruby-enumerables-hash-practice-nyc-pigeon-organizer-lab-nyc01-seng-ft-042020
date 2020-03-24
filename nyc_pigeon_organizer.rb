@@ -27,17 +27,12 @@ def nyc_pigeon_organizer(data)
         else
           pigeon_list[value[inner_index]][category] << key.to_s 
         end
-        
+        pp pigeon_list
         inner_index += 1
       end
       pp counter
     end
-    # data[category].each do |key, value|
-    #   items = []
-    #   if value.has_value?(value)
-    #     items << key
-    #   end
-    # end
+
     
     index += 1
   end
