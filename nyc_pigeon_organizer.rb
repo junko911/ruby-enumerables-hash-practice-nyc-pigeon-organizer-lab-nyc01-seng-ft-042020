@@ -7,18 +7,21 @@ def nyc_pigeon_organizer(data)
   while index < data.length do
     category = data.keys[index]
     
-    inner_index = 0
-    while inner_index < value.length do
-      
-      if pigeon_list[value[inner_index]].nil?
-        pigeon_list[value[inner_index]] = { category => 0 }
-      else
-        pigeon_list[value[inner_index]][category] = 0
+    data[category].each do |key, value|
+    
+      inner_index = 0
+      while inner_index < value.length do
+        
+        if pigeon_list[value[inner_index]].nil?
+          pigeon_list[value[inner_index]] = { category => nil }
+        else
+          pigeon_list[value[inner_index]][category] = nil
+        end
+        
+        inner_index += 1
       end
       
-      inner_index += 1
     end
-      
     # data[category].each do |key, value|
     #   items = []
     #   if value.has_value?(value)
