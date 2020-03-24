@@ -1,13 +1,11 @@
 require 'pp'
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
-  # pigeons = {}
-  # name = []
-  # data.reduce() do |memo, (key, value)|
-  #   name << value
-  # end
-  pp data.invert
+  attribute = {}
+  data.each do |key, value|
+    attribute[key] = value
+  end
+  pp attribute
 end
 
 
