@@ -33,4 +33,4 @@ pigeon_data = {
     "Library" => ["Luca"]
   }
 }
-nyc_pigeon_organizer(pigeon_data)
+pp nyc_pigeon_organizer(pigeon_data)
