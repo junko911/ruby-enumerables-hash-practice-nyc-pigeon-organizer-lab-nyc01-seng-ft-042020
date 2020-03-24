@@ -22,9 +22,11 @@ def nyc_pigeon_organizer(data)
         # end
         
         if pigeon_list[value[inner_index]].nil?
-          pigeon_list[value[inner_index]] = { category => [] }
+          pigeon_list[value[inner_index]] = { category => [key.to_s] }
+        # else if pigeon_list[value[inner_index]][category].include?(key.to_s) == false
+        else
+          pigeon_list[value[inner_index]][category] << key.to_s 
         end
-          pigeon_list[value[inner_index]][category] << key.to_s
         
         inner_index += 1
       end
