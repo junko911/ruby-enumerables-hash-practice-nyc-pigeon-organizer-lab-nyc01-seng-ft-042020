@@ -1,9 +1,9 @@
 require 'pp'
 
 def nyc_pigeon_organizer(data)
+  pigeon_list = {}
   
   index = 0
-  pigeon_list = {}
   while index < data.length do
     category = data.keys[index]
     
@@ -13,21 +13,23 @@ def nyc_pigeon_organizer(data)
       # pp key.length
     
       inner_index = 0
+      counter = 0
       while inner_index < value.length do
+        counter += 1 
         # items = []
         # pp data[category][key].include? (value[inner_index])
           # items << key
         # end
         
-        if pigeon_list[value[inner_index]].nil?
-          pigeon_list[value[inner_index]] = { category => [key.to_s] }
-        else if pigeon_list[value[inner_index]][category].include?(key.to_s) == false
-          pigeon_list[value[inner_index]][category] << key.to_s
-        end
+        # if pigeon_list[value[inner_index]].nil?
+        #   pigeon_list[value[inner_index]] = { category => [key.to_s] }
+        # else if pigeon_list[value[inner_index]][category].include?(key.to_s) == false
+        #   pigeon_list[value[inner_index]][category] << key.to_s
+        # end
         
         inner_index += 1
       end
-      
+      pp counter
     end
     # data[category].each do |key, value|
     #   items = []
