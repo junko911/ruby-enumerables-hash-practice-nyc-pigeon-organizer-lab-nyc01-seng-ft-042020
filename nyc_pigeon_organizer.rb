@@ -6,8 +6,6 @@ def nyc_pigeon_organizer(data)
     data[index].each do |key, value|
       attribute[value.join()] = {:color => key.to_s}
     end
-    index += 1
-  end
   pp attribute
 end
 
