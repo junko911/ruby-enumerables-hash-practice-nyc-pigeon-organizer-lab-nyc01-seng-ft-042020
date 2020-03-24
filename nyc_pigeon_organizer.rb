@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       inner_index = 0
       while inner_index < value.length do
         items = []
-        
+        pp key
         if pigeon_list[value[inner_index]].nil?
           pigeon_list[value[inner_index]] = { category => key.to_s }
         else
@@ -86,4 +86,4 @@ pigeon_data = {
           "City Hall" => ["Andrew"]
         }
       }
-pp nyc_pigeon_organizer(pigeon_data)
+nyc_pigeon_organizer(pigeon_data)
