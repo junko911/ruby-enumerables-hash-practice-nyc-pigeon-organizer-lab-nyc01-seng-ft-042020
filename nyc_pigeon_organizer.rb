@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 
     data[category].reduce({}) do |memo (key, value)|
       memo[value.join()] = {category => key.to_s}
-      memo
+      pp memo
     end
     
     index += 1
