@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_list[value[inner_index]].nil?
           pigeon_list[value[inner_index]] = { category => [key.to_s] }
         else
-          pigeon_list[value[inner_index]][category] = [key.to_s] 
+          pp pigeon_list[value[inner_index]][category].length
         end
         
         inner_index += 1
