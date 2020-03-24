@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     category = data.keys[index]
     
     data[category].each do |key, value|
-      
+      pp key
       # outer_index = 0
       # pp key.length
     
