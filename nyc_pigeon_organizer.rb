@@ -14,13 +14,12 @@ def nyc_pigeon_organizer(data)
         items = []
         if data[category][key].include? (value[inner_index])
           items << key
-          pp items
         end
         
         if pigeon_list[value[inner_index]].nil?
-          pigeon_list[value[inner_index]] = { category => nil }
+          pigeon_list[value[inner_index]] = { category => items }
         else
-          pigeon_list[value[inner_index]][category] = nil
+          pigeon_list[value[inner_index]][category] = items
         end
         
         inner_index += 1
