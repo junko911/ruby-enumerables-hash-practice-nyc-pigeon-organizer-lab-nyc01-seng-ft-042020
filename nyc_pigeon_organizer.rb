@@ -11,9 +11,9 @@ def nyc_pigeon_organizer(data)
     while inner_index < value.length do
       
       if pigeon_list[value[inner_index]].nil?
-        pigeon_list[value[inner_index]] = { category => nil }
+        pigeon_list[value[inner_index]] = { category => 0 }
       else
-        pigeon_list[value[inner_index]][category] = nil
+        pigeon_list[value[inner_index]][category] = 0
       end
       
       inner_index += 1
