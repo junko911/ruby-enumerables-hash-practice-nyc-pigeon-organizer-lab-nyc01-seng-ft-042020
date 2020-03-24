@@ -3,9 +3,11 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   attribute = {}
   
-  pp data.length
-  # index = 0
-  # while index < data.length 
+  index = 0
+  while index < data.length do
+    pp data[index]
+    index += 1
+  end
   
   # data.each do |key1, value1|
   #   pp key1
