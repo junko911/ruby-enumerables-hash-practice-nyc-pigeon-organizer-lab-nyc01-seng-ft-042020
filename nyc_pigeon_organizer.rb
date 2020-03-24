@@ -3,7 +3,7 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   attribute = {}
   
-  ind
+  pp data
   
   data[].each do |key, value|
     attribute[value.join()] = { => key.to_s}
