@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
       if pigeon_list[value.join()].nil?
         pigeon_list[value.join()] = {}
       else
-        pigeon_list[value.join()] = { category => key.to_s }
+        pigeon_list[value.join()][category] = key.to_s
       end
         
     end
