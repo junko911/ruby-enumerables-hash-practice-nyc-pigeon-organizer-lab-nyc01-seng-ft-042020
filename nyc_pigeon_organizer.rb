@@ -1,15 +1,15 @@
 require 'pp'
 
 def nyc_pigeon_organizer(data)
-  attribute = {}
+  # attribute = {}
   
   index = 0
   while index < data.length do
     category = data.keys[index]
 
-    data[category].reduce do |key, value|
-      attribute[value.join()] = {category => key.to_s}
-      pp attribute
+    data[category].reduce({}) do |memo (key, value)|
+      memo[value.join()] = {category => key.to_s}
+      memo
     end
     
     index += 1
