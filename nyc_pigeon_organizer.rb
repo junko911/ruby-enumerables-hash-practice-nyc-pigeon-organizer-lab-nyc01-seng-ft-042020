@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
       while inner_index < value.length do
         items = []
         if data[category][key].include? (value[inner_index])
-          items << key.to_s
+          items << key
         end
         
         # if pigeon_list[value[inner_index]].nil?
