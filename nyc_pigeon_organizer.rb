@@ -5,9 +5,10 @@ def nyc_pigeon_organizer(data)
   
   index = 0
   while index < data.length do
-    data.keys[index].each do |key, value|
-      attribute[value.join()] = {data.keys[index] => key.to_s}
-    end
+    # data.keys[index].each do |key, value|
+    #   attribute[value.join()] = {data.keys[index] => key.to_s}
+    # end
+    pp data.keys[index]
     index += 1  
   end
   
