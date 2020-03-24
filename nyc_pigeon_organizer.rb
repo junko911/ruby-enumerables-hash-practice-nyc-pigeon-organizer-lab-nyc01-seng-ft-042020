@@ -10,7 +10,10 @@ def nyc_pigeon_organizer(data)
 
     data[category].each do |key, value|
       
-      pigeon_list[value][value.join()] = { category => key.to_s }
+      if pigeon_list[value]
+        
+      
+      [value.join()] = { category => key.to_s }
       # pp memo
       memo
     end
