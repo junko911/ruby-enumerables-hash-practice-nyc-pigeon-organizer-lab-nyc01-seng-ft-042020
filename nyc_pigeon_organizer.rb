@@ -13,12 +13,12 @@ def nyc_pigeon_organizer(data)
       pigeon_list[value[inner_index]][category] = nil
     end
       
-    data[category].each do |key, value|
-      items = []
-      if value.has_value?(value)
-        items << key
-      end
-    end
+    # data[category].each do |key, value|
+    #   items = []
+    #   if value.has_value?(value)
+    #     items << key
+    #   end
+    # end
     
     index += 1
   end
