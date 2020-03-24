@@ -3,8 +3,8 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeons = {}
-  data.each_pair do |pair|
-    pp pair
+  data.reduce do |memo, (key, value)|
+    pp memo
   end
   
 end
