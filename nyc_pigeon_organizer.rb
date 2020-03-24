@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   
   index = 0
   while index < data.length do
-    pp data_keys[index]
+    pp data.keys[index]
     index += 1
   end
   
