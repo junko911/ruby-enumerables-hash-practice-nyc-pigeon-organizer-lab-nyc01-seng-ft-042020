@@ -9,11 +9,13 @@ def nyc_pigeon_organizer(data)
     
     data[category].each do |key, value|
       
+      outer_index = 0
+      pp key.length
     
       inner_index = 0
       while inner_index < value.length do
         # items = []
-        pp data[category][key].include? (value[inner_index])
+        # pp data[category][key].include? (value[inner_index])
           # items << key
         # end
         
