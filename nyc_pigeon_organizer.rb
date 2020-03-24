@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   
   attribute = {}
   data[:color].each do |key, value|
-    attribute[value] = key.to_s
+    attribute[value.to_] = key.to_s
   end
   pp attribute
 end
