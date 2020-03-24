@@ -21,6 +21,7 @@ def nyc_pigeon_organizer(data)
         # else
         #   pigeon_list[value[inner_index]][category] = items
         # end
+        pp items
         
         inner_index += 1
       end
