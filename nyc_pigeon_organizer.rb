@@ -6,9 +6,9 @@ def nyc_pigeon_organizer(data)
   data.each do |key1, value1|
     pp key1
     
-    do |key2, value2|
-      attribute[value2.join()] = {key1 => key2.to_s}
-    end
+    # do |key2, value2|
+    #   attribute[value2.join()] = {key1 => key2.to_s}
+    # end
   end
   
   
