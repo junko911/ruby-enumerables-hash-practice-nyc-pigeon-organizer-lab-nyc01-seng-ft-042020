@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[value[inner_index]] = { category => [key.to_s] }
         # else if pigeon_list[value[inner_index]][category].include?(key.to_s) == false
         else
-          pp pigeon_list[value[inner_index]][category].pop 
+          pp pigeon_list[value[inner_index]][category].push
         end
         
         inner_index += 1
