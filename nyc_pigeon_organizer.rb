@@ -3,9 +3,9 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   attribute = {}
   
-  data.each_key do
-    data.keys[index].each do |key, value|
-      attribute[value.join()] = {data.keys[index] => key.to_s}
+  data.each do |key1, value1|
+    key1.each do |key2, value2|
+      attribute[value2.join()] = {key1 => key2.to_s}
     end
   end
   
