@@ -3,7 +3,7 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeons = {}
-  data.reduce("first") do |memo, (key, value)|
+  data.reduce() do |memo, (key, value)|
   pigeons[key] = value
   end
   pp pigeons
