@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     index += 1
   end
 
-  attribute
+  pp attribute
 end
 
 
