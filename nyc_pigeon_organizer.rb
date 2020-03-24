@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   while index < data.length do
     category = data.keys[index]
 
-    data[category].each do |key, value|
+    data[category].reduce do |key, value|
       attribute[value.join()] = {category => key.to_s}
       pp attribute
     end
