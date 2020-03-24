@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       inner_index = 0
       while inner_index < value.length do
         items = []
-        if data[category][key].include? (value[inner_index]).to_sym
+        if data[category][key].include? (value[inner_index])
           items << key.to_s
         end
         
