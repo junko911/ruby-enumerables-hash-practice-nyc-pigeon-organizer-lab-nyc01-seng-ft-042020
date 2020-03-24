@@ -5,8 +5,8 @@ def nyc_pigeon_organizer(data)
   pigeons = {}
   data.reduce() do |memo, (key, value)|
   pigeons[key] = value
-  end
   pp memo
+  end
   pp pigeons
 end
 
