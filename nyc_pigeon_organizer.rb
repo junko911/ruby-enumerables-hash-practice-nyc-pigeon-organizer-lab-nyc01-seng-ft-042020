@@ -3,8 +3,6 @@ require 'pp'
 def nyc_pigeon_organizer(data)
   
   attribute = {}
-  index = 0
-  while index < data.length do
     data[index].each do |key, value|
       attribute[value.join()] = {:color => key.to_s}
     end
