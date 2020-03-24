@@ -1,8 +1,9 @@
 require 'pp'
 
 def nyc_pigeon_organizer(data)
+  
   attribute = {}
-  data.each do |key, value|
+  data[:color].each do |key, value|
     attribute[key] = value
   end
   pp attribute
