@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
 
     pigeon_list = data[category].reduce({}) do |memo, (key, value)|
       
+      
       memo[value.join()] = { category => key.to_s }
       memo
     end
