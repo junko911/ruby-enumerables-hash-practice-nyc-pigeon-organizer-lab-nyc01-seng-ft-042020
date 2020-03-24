@@ -5,9 +5,11 @@ def nyc_pigeon_organizer(data)
   attribute = {}
   index = 0
   while index < data.length do
-    data[:color].each do |key, value|
+    data[index].each do |key, value|
       attribute[value.join()] = {:color => key.to_s}
     end
+    index += 1
+  end
   pp attribute
 end
 
