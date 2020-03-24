@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
   pigeons = memo
   memo[key] = value
   end
+  pp pigeons
 end
 
 
