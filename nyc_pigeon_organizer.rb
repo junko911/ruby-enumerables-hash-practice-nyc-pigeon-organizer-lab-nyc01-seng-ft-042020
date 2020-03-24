@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
     index += 1
   end
 
-  pigeon_list
+  pp pigeon_list
 end
 
 
