@@ -19,12 +19,12 @@ def nyc_pigeon_organizer(data)
           # items << key
         # end
         
-        # if pigeon_list[value[inner_index]].nil?
-        #   pigeon_list[value[inner_index]] = { category => items }
-        # else
-        #   pigeon_list[value[inner_index]][category] = items
-        # end
-        # pp items
+        if pigeon_list[value[inner_index]].nil?
+          pigeon_list[value[inner_index]] = { category => [] }
+        else
+          pigeon_list[value[inner_index]][category] = []
+        end
+        pp items
         
         inner_index += 1
       end
