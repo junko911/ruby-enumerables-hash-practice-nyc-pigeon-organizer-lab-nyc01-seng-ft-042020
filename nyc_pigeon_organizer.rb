@@ -12,8 +12,8 @@ def nyc_pigeon_organizer(data)
     
   #   # do |key2, value2|
   #   #   attribute[value2.join()] = {key1 => key2.to_s}
-  #   # end
-  end
+  # #   # end
+  # end
   
   
   # pp attribute
