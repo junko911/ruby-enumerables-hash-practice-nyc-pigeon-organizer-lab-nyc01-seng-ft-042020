@@ -9,8 +9,8 @@ def nyc_pigeon_organizer(data)
     
     data[category].each do |key, value|
       
-      outer_index = 0
-      pp key.length
+      # outer_index = 0
+      # pp key.length
     
       inner_index = 0
       while inner_index < value.length do
@@ -24,7 +24,6 @@ def nyc_pigeon_organizer(data)
         else
           pigeon_list[value[inner_index]][category] = []
         end
-        pp items
         
         inner_index += 1
       end
