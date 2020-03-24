@@ -7,9 +7,9 @@ def nyc_pigeon_organizer(data)
   while index < data.length do
     category = data.keys[index]
 
-    inner_index = 0
-    while inner_index < 
     data[category].each do |key, value|
+      inner_index = 0
+      while inner_index < 
       
       if pigeon_list[value.join()].nil?
         pigeon_list[value.join()] = { category => key.to_s }
