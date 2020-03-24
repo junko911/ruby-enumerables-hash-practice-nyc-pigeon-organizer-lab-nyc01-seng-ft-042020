@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       
       
       memo[value.join()] = { category => key.to_s }
-      memo
+      pp memo
     end
     
     index += 1
