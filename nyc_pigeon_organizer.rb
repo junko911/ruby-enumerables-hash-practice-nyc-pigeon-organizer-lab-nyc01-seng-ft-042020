@@ -17,11 +17,11 @@ def nyc_pigeon_organizer(data)
           pp items
         end
         
-        # if pigeon_list[value[inner_index]].nil?
-        #   pigeon_list[value[inner_index]] = { category => nil }
-        # else
-        #   pigeon_list[value[inner_index]][category] = nil
-        # end
+        if pigeon_list[value[inner_index]].nil?
+          pigeon_list[value[inner_index]] = { category => nil }
+        else
+          pigeon_list[value[inner_index]][category] = nil
+        end
         
         inner_index += 1
       end
