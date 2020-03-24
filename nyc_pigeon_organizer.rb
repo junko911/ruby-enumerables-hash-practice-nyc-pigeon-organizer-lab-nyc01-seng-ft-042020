@@ -2,12 +2,12 @@ require 'pp'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  pigeons = {}
-  name = []
-  data.reduce() do |memo, (key, value)|
-    name << value
-  end
-  pp name
+  # pigeons = {}
+  # name = []
+  # data.reduce() do |memo, (key, value)|
+  #   name << value
+  # end
+  data.
 end
 
 
